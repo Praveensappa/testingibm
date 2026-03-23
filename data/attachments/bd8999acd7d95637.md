@@ -1,0 +1,64 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Bike4Sell" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e14]: Bike4Sell
+        - navigation [ref=e15]:
+          - link "Dashboard" [ref=e16] [cursor=pointer]:
+            - /url: /
+            - img [ref=e17]
+            - text: Dashboard
+          - link "Browse Bikes" [ref=e22] [cursor=pointer]:
+            - /url: /listings
+            - img [ref=e23]
+            - text: Browse Bikes
+          - link "Sell Bike" [ref=e26] [cursor=pointer]:
+            - /url: /sell
+            - img [ref=e27]
+            - text: Sell Bike
+          - link "My Orders" [active] [ref=e32] [cursor=pointer]:
+            - /url: /orders
+            - img [ref=e33]
+            - text: My Orders
+          - link "Messages" [ref=e36] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e37]
+            - text: Messages
+          - link "Estimator" [ref=e39] [cursor=pointer]:
+            - /url: /price-estimator
+            - img [ref=e40]
+            - text: Estimator
+          - link "Contact" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e43]
+            - text: Contact
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: peter
+            - generic [ref=e49]: user
+          - button "Logout" [ref=e50]:
+            - img [ref=e51]
+    - main [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - img [ref=e58]
+          - generic [ref=e61]:
+            - heading "My Orders" [level=1] [ref=e62]
+            - paragraph [ref=e63]: Track your purchased bikes
+        - generic [ref=e64]:
+          - img [ref=e65]
+          - heading "No orders yet" [level=3] [ref=e69]
+          - paragraph [ref=e70]: When you buy a bike, it will appear here.
+          - link "Browse Bikes" [ref=e71] [cursor=pointer]:
+            - /url: /listings
+    - contentinfo [ref=e72]:
+      - paragraph [ref=e74]: © 2026 Bike4Sell. The premium second-hand bike marketplace.
+  - region "Notifications (F8)":
+    - list
+```

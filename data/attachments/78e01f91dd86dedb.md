@@ -1,0 +1,71 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Bike4Sell" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e14]: Bike4Sell
+        - navigation [ref=e15]:
+          - link "Dashboard" [ref=e16] [cursor=pointer]:
+            - /url: /
+            - img [ref=e17]
+            - text: Dashboard
+          - link "Browse Bikes" [ref=e22] [cursor=pointer]:
+            - /url: /listings
+            - img [ref=e23]
+            - text: Browse Bikes
+          - link "Sell Bike" [ref=e26] [cursor=pointer]:
+            - /url: /sell
+            - img [ref=e27]
+            - text: Sell Bike
+          - link "My Orders" [ref=e32] [cursor=pointer]:
+            - /url: /orders
+            - img [ref=e33]
+            - text: My Orders
+          - link "Messages" [ref=e36] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e37]
+            - text: Messages
+          - link "Estimator" [ref=e39] [cursor=pointer]:
+            - /url: /price-estimator
+            - img [ref=e40]
+            - text: Estimator
+          - link "Contact" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e43]
+            - text: Contact
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: peter
+            - generic [ref=e49]: user
+          - button "Logout" [ref=e50]:
+            - img [ref=e51]
+    - main [ref=e54]:
+      - generic [ref=e58]:
+        - img [ref=e61]
+        - heading "Welcome back" [level=1] [ref=e66]
+        - paragraph [ref=e67]: Enter your credentials to access your account
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - text: Email address
+            - textbox "you@example.com" [ref=e70]: peter@gmail.com
+          - generic [ref=e71]:
+            - text: Password
+            - textbox "••••••••" [ref=e72]: 21a3721
+          - button [disabled] [ref=e73]:
+            - img [ref=e74]
+        - generic [ref=e76]:
+          - text: Don't have an account?
+          - link "Create one" [ref=e77] [cursor=pointer]:
+            - /url: /register
+            - text: Create one
+            - img [ref=e78]
+    - contentinfo [ref=e80]:
+      - paragraph [ref=e82]: © 2026 Bike4Sell. The premium second-hand bike marketplace.
+  - region "Notifications (F8)":
+    - list
+```
