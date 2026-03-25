@@ -1,0 +1,112 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Bike4Sell" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e14]: Bike4Sell
+        - navigation [ref=e15]:
+          - link "Dashboard" [ref=e16] [cursor=pointer]:
+            - /url: /
+            - img [ref=e17]
+            - text: Dashboard
+          - link "Browse Bikes" [ref=e22] [cursor=pointer]:
+            - /url: /listings
+            - img [ref=e23]
+            - text: Browse Bikes
+          - link "Sell Bike" [ref=e26] [cursor=pointer]:
+            - /url: /sell
+            - img [ref=e27]
+            - text: Sell Bike
+          - link "My Orders" [ref=e32] [cursor=pointer]:
+            - /url: /orders
+            - img [ref=e33]
+            - text: My Orders
+          - link "Messages" [ref=e36] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e37]
+            - text: Messages
+          - link "Estimator" [ref=e39] [cursor=pointer]:
+            - /url: /price-estimator
+            - img [ref=e40]
+            - text: Estimator
+          - link "Contact" [ref=e42] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e43]
+            - text: Contact
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: peter
+            - generic [ref=e49]: user
+          - button "Logout" [ref=e50]:
+            - img [ref=e51]
+    - main [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Sell Your Bike" [level=1] [ref=e57]
+          - paragraph [ref=e58]: List your second-hand bike and find the perfect buyer.
+        - generic [ref=e59]:
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - text: Brand
+                - textbox "e.g. Honda, Yamaha" [active] [ref=e64]
+                - paragraph [ref=e65]: Brand is required
+              - generic [ref=e66]:
+                - text: Model
+                - textbox "e.g. CBR 150R" [ref=e67]: hondaRx-100
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - text: Year
+                - spinbutton [ref=e70]
+                - paragraph [ref=e71]: Invalid year
+              - generic [ref=e72]:
+                - text: Original Price (₹)
+                - spinbutton [ref=e73]: "202312000"
+              - generic [ref=e74]:
+                - text: KM Driven
+                - spinbutton [ref=e75]
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - text: Fuel Type
+                - combobox [ref=e78]:
+                  - option "Petrol" [selected]
+                  - option "Diesel"
+                  - option "Electric"
+                  - option "CNG"
+              - generic [ref=e79]:
+                - text: Location
+                - textbox "e.g. Mumbai, MH" [ref=e80]: banglore
+            - generic [ref=e81]:
+              - text: Description
+              - textbox "Describe the condition, features, etc." [ref=e82]
+            - generic [ref=e83]:
+              - text: Image URL
+              - generic [ref=e85]:
+                - img [ref=e86]
+                - textbox "https://example.com/bike.jpg" [ref=e89]
+              - paragraph [ref=e90]: Provide a public image URL for your bike.
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - img [ref=e94]
+              - heading "Price Estimator" [level=3] [ref=e96]
+              - paragraph [ref=e97]: We calculate the best selling price based on age and mileage depreciation rules.
+              - generic [ref=e98]:
+                - generic [ref=e99]: Suggested Price
+                - generic [ref=e100]: "---"
+              - button "Calculate Price" [ref=e101]:
+                - img [ref=e102]
+                - text: Calculate Price
+              - generic [ref=e104]:
+                - img [ref=e105]
+                - paragraph [ref=e107]: Calculates 15% depreciation for 1st year, 10% thereafter. KM adjustments apply.
+            - button "Publish Listing" [ref=e108]
+    - contentinfo [ref=e109]:
+      - paragraph [ref=e111]: © 2026 Bike4Sell. The premium second-hand bike marketplace.
+  - region "Notifications (F8)":
+    - list
+```
