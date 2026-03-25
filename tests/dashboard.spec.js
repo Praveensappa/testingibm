@@ -7,6 +7,7 @@ test.beforeEach(async ({ page }) => {
     dashboard = new DashboardPage(page);
     await dashboard.goto();
     await dashboard.login('peter@gmail.com', '213721');
+    await expect(page).toHaveURL(/app/);
 });
 
 // 1
@@ -15,7 +16,7 @@ test('checking sellBike button functionality', async ({ page }) => {
     await expect(page).toHaveURL(/sell/);
 });
 
-// 2
+2
 test('checking Browse bike functionality', async ({ page }) => {
     await dashboard.clickAndWait(dashboard.browseBike, /listings/);
     await expect(page).toHaveURL(/listings/);
