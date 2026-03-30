@@ -8,7 +8,7 @@ test.beforeEach(async ({ page }) => {
     await dashboard.goto();
     await dashboard.login('peter@gmail.com', '213721');
     await expect(page).toHaveURL(/app/);
-});
+});  
 
 // 1
 test('checking sellBike button functionality', async ({ page }) => {
